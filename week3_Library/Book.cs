@@ -5,10 +5,37 @@ using System.Text;
 namespace week3_Library
 {
     public class Book
-    { 
-       public string Title;
-       public string Author;
-       public int ISBN; 
+    {
+        // Private variables // 
+        private string _title;
+        private string _author;
+        private int _isbn; 
+
+        public string Title
+        {
+            get { return _title;  } 
+            set { _title = value;  }
+
+         // Public variables // 
+
+        }
+
+        public string Author
+        {
+            get { return _author; }
+            set { _author = value; }
+
+
+        }
+
+        public int ISBN
+        {
+            get { return _isbn; }
+            set { _isbn = value; }
+
+
+        }
+
 
         // Paramaterised constructor // 
         public Book(string bookTitle, string bookAuthor, int bookISBN)
@@ -19,6 +46,7 @@ namespace week3_Library
 
         }
 
+        // Methods // 
     
         public void DisplayInfo()
         {
