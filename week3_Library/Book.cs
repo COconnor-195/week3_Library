@@ -39,9 +39,7 @@ namespace week3_Library
         {
             get { return _author; }
             set 
-            { _author = value; 
-            
-            }
+            { _author = value; }
 
 
         }
@@ -50,10 +48,7 @@ namespace week3_Library
         {
             get { return _isbn; }
             set 
-            { _isbn = value; 
-            
-            
-            }
+            { _isbn = value; }
 
 
         }
