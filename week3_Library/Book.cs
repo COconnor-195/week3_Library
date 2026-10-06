@@ -38,8 +38,22 @@ namespace week3_Library
         public string Author
         {
             get { return _author; }
-            set 
-            { _author = value; }
+            set
+            { _author = value;
+
+                if (!value.Any(char.IsDigit))
+                {
+
+                    _author = value;
+
+                }
+              else
+                {
+                    Console.WriteLine("Cannot enter number for title"); 
+                 
+                }
+            
+            }
 
 
         }
@@ -48,7 +62,15 @@ namespace week3_Library
         {
             get { return _isbn; }
             set 
-            { _isbn = value; }
+            { _isbn = value; 
+            if (value <0)
+                {
+                    _isbn = value; 
+
+
+                }
+            
+            }
 
 
         }
